@@ -1,0 +1,25 @@
+<guiComposition version="1.0">
+  <models>
+    <model omi="Component00/Component.omi" rect_x="50" rect_y="50" rect_width="100" rect_height="50" />
+    <model omi="Component01/Component.omi" rect_x="50" rect_y="50" rect_width="100" rect_height="50" />
+    <model omi="Component02/Component.omi" rect_x="50" rect_y="50" rect_width="100" rect_height="50" />
+    <model omi="Component03/Component.omi" rect_x="50" rect_y="50" rect_width="100" rect_height="50" />
+    <model omi="Component04/Component.omi" rect_x="50" rect_y="50" rect_width="100" rect_height="50" />
+    <model omi="Oatc.OpenMI.Gui.Trigger" rect_x="50" rect_y="50" rect_width="100" rect_height="50" />
+  </models>
+  <links>
+    <uilink model_providing="Compute01" model_accepting="Compute00">
+      <link id="0" source_elementset="DefaultSet" source_quantity="Quantity00" target_elementset="DefaultSet" target_quantity="Quantity00" />
+    </uilink>
+    <uilink model_providing="Compute02" model_accepting="Compute00">
+      <link id="1" source_elementset="DefaultSet" source_quantity="Quantity00" target_elementset="DefaultSet" target_quantity="Quantity01" />
+    </uilink>
+    <uilink model_providing="Compute03" model_accepting="Compute00">
+      <link id="2" source_elementset="DefaultSet" source_quantity="Quantity00" target_elementset="DefaultSet" target_quantity="Quantity02" />
+    </uilink>
+    <uilink model_providing="Compute00" model_accepting="Oatc.OpenMI.Gui.Trigger">
+      <link id="3" source_elementset="DefaultSet" source_quantity="Quantity00" target_elementset="TriggerElementID" target_quantity="TriggerQuantityID" />
+    </uilink>
+  </links>
+  <runproperties listenedeventtypes="11111111111" triggerinvoke="04/10/2000 00:00:00 " runinsamethread="0" showeventsinlistbox="1" logfilename="CompositionRun.log" />
+</guiComposition>
