@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Pipistrelle version="2.0">
+  <DocumentAccessers>
+    <Pipistrelle>
+      <IDocumentAccessor>
+        <ExternalType type="FluidEarth2.Pipistrelle.UiBase.ChiFileSavable">
+          <Identity id="8a10cb4f-cc0f-4edc-9541-29e389f036f1">
+            <Describes caption="FluidEarth2.Pipistrelle.UiBase.ChiFileSavable">FluidEarth2_Pipistrelle_UiBase, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Describes>
+          </Identity>
+          <AssemblyName>FluidEarth2_Pipistrelle_UiBase, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+          <CodeBase>
+            <Original>file:///C:/Users/Tom/Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle_UiBase.dll</Original>
+          </CodeBase>
+        </ExternalType>
+        <Persistence>
+          <DocumentFile caption=" Pipistrelle File (CHI)">
+            <Filter>Pipistrelle|*.chi|XML (*.xml)|*.xml|All Files (*.*)|*.*</Filter>
+            <DefaultExt>.chi</DefaultExt>
+            <Uri>file:///C:/Users/Tom/Documents/GitHub/parallel-sdk/OpenMI_2.0/Sample/Runtime/Composition.chi</Uri>
+          </DocumentFile>
+        </Persistence>
+      </IDocumentAccessor>
+    </Pipistrelle>
+  </DocumentAccessers>
+  <Composition>
+    <Identity id="b1dad022-0746-455b-b719-2be7b70de8c0">
+      <Describes caption="Composition"></Describes>
+    </Identity>
+    <Platforms>Win32|Win64|Win|Unix32|Unix64|Unix|Linux32|Linux64|Linux|Mac32|Mac64|Mac|All</Platforms>
+    <AssemblyLoader caption="Composition">
+      <Uri>C:\Users\Tom\Desktop\Standard2\FluidEarth2_Pipistrelle\bin\x86\Debug</Uri>
+      <Uri>C:\Users\Tom\Documents\GitHub\parallel-sdk\OpenMI_2.0\Sample\Runtime</Uri>
+      <Uri>C:\Users\Tom\Documents\GitHub\parallel-sdk\OpenMI_2.0\Sample\Runtime\Assemblies</Uri>
+      <Extension>.dll</Extension>
+      <Extension>.exe</Extension>
+    </AssemblyLoader>
+    <!--Should be an Item for all components and all active inputs, outputs, adapters and factories-->
+    <Items>
+      <IdentifiableItem caption="Component00" instanceId="KState.SimpleComponent.SimpleComponent" interface="IBaseLinkableComponent" id="6c5396a5-4002-40c4-b35c-6e28a0dab288" captionEdited="False" descriptionEdited="False">
+        <Platforms>Win32|Win64|Win|Unix32|Unix64|Unix|Linux32|Linux64|Linux|Mac32|Mac64|Mac|All</Platforms>
+        <Constructor>
+          <ProxyLinkableComponent>
+            <LinkableComponent Type="KState.SimpleComponent.SimpleComponent" Assembly="Assemblies/SimpleComponent.dll" xmlns="http://www.openmi.org/v2_0">
+              <Arguments>
+                <Argument Key="FluidEarth2.Sdk.BaseComponentWithEngine.Caption" Value="Component00" ReadOnly="false" />
+                <Argument Key="FluidEarth2.Sdk.BaseComponentWithEngine.Diagnostics" Value="" ReadOnly="false" />
+                <Argument Key="FluidEarth2.Sdk.BaseComponentWithEngine.Remoting" Value="inProcess" ReadOnly="false" />
+                <Argument Key="FluidEarth2.Sdk.BaseComponentTimeWithEngine.TimeHorizon" Value="Closed^56200^56300" ReadOnly="false" />
+                <Argument Key="KState.SimpleComponent.SimpleComponent.Arg.TimeDelta" Value="1" ReadOnly="false" />
+              </Arguments>
+              <Platforms>
+                <Platform>Win</Platform>
+                <Platform>Win32</Platform>
+                <Platform>Win64</Platform>
+                <Platform>Unix</Platform>
+                <Platform>Unix32</Platform>
+                <Platform>Unix64</Platform>
+                <Platform>Linux</Platform>
+                <Platform>Linux32</Platform>
+                <Platform>Linux64</Platform>
+                <Platform>Mac</Platform>
+                <Platform>Mac32</Platform>
+                <Platform>Mac64</Platform>
+              </Platforms>
+            </LinkableComponent>
+          </ProxyLinkableComponent>
+        </Constructor>
+        <Connectivity />
+      </IdentifiableItem>
+      <IdentifiableItem caption="Component01" instanceId="KState.SimpleComponent.SimpleComponent" interface="IBaseLinkableComponent" id="a05bf6ad-222e-4bd8-9b9c-68d29b0239c5" captionEdited="False" descriptionEdited="False">
+        <Platforms>Win32|Win64|Win|Unix32|Unix64|Unix|Linux32|Linux64|Linux|Mac32|Mac64|Mac|All</Platforms>
+        <Constructor>
+          <ProxyLinkableComponent>
+            <LinkableComponent Type="KState.SimpleComponent.SimpleComponent" Assembly="Assemblies/SimpleComponent.dll" xmlns="http://www.openmi.org/v2_0">
+              <Arguments>
+                <Argument Key="FluidEarth2.Sdk.BaseComponentWithEngine.Caption" Value="Component01" ReadOnly="false" />
+                <Argument Key="FluidEarth2.Sdk.BaseComponentWithEngine.Diagnostics" Value="" ReadOnly="false" />
+                <Argument Key="FluidEarth2.Sdk.BaseComponentWithEngine.Remoting" Value="inProcess" ReadOnly="false" />
+                <Argument Key="FluidEarth2.Sdk.BaseComponentTimeWithEngine.TimeHorizon" Value="Closed^56200^56300" ReadOnly="false" />
+                <Argument Key="KState.SimpleComponent.SimpleComponent.Arg.TimeDelta" Value="1" ReadOnly="false" />
+              </Arguments>
+              <Platforms>
+                <Platform>Win</Platform>
+                <Platform>Win32</Platform>
+                <Platform>Win64</Platform>
+                <Platform>Unix</Platform>
+                <Platform>Unix32</Platform>
+                <Platform>Unix64</Platform>
+                <Platform>Linux</Platform>
+                <Platform>Linux32</Platform>
+                <Platform>Linux64</Platform>
+                <Platform>Mac</Platform>
+                <Platform>Mac32</Platform>
+                <Platform>Mac64</Platform>
+              </Platforms>
+            </LinkableComponent>
+          </ProxyLinkableComponent>
+        </Constructor>
+        <Connectivity />
+      </IdentifiableItem>
+      <IdentifiableItem caption="Component02" instanceId="KState.SimpleComponent.SimpleComponent" interface="IBaseLinkableComponent" id="8f9252c0-6528-4d02-bc38-ce9b6ca82ebb" captionEdited="False" descriptionEdited="False">
+        <Platforms>Win32|Win64|Win|Unix32|Unix64|Unix|Linux32|Linux64|Linux|Mac32|Mac64|Mac|All</Platforms>
+        <Constructor>
+          <ProxyLinkableComponent>
+            <LinkableComponent Type="KState.SimpleComponent.SimpleComponent" Assembly="Assemblies/SimpleComponent.dll" xmlns="http://www.openmi.org/v2_0">
+              <Arguments>
+                <Argument Key="FluidEarth2.Sdk.BaseComponentWithEngine.Caption" Value="Component02" ReadOnly="false" />
+                <Argument Key="FluidEarth2.Sdk.BaseComponentWithEngine.Diagnostics" Value="" ReadOnly="false" />
+                <Argument Key="FluidEarth2.Sdk.BaseComponentWithEngine.Remoting" Value="inProcess" ReadOnly="false" />
+                <Argument Key="FluidEarth2.Sdk.BaseComponentTimeWithEngine.TimeHorizon" Value="Closed^56200^56300" ReadOnly="false" />
+                <Argument Key="KState.SimpleComponent.SimpleComponent.Arg.TimeDelta" Value="1" ReadOnly="false" />
+              </Arguments>
+              <Platforms>
+                <Platform>Win</Platform>
+                <Platform>Win32</Platform>
+                <Platform>Win64</Platform>
+                <Platform>Unix</Platform>
+                <Platform>Unix32</Platform>
+                <Platform>Unix64</Platform>
+                <Platform>Linux</Platform>
+                <Platform>Linux32</Platform>
+                <Platform>Linux64</Platform>
+                <Platform>Mac</Platform>
+                <Platform>Mac32</Platform>
+                <Platform>Mac64</Platform>
+              </Platforms>
+            </LinkableComponent>
+          </ProxyLinkableComponent>
+        </Constructor>
+        <Connectivity />
+      </IdentifiableItem>
+      <IdentifiableItem caption="Component03" instanceId="KState.SimpleComponent.SimpleComponent" interface="IBaseLinkableComponent" id="a7d2e0f5-53e0-4b6a-be2a-0a9a8cfbe60f" captionEdited="False" descriptionEdited="False">
+        <Platforms>Win32|Win64|Win|Unix32|Unix64|Unix|Linux32|Linux64|Linux|Mac32|Mac64|Mac|All</Platforms>
+        <Constructor>
+          <ProxyLinkableComponent>
+            <LinkableComponent Type="KState.SimpleComponent.SimpleComponent" Assembly="Assemblies/SimpleComponent.dll" xmlns="http://www.openmi.org/v2_0">
+              <Arguments>
+                <Argument Key="FluidEarth2.Sdk.BaseComponentWithEngine.Caption" Value="Component03" ReadOnly="false" />
+                <Argument Key="FluidEarth2.Sdk.BaseComponentWithEngine.Diagnostics" Value="" ReadOnly="false" />
+                <Argument Key="FluidEarth2.Sdk.BaseComponentWithEngine.Remoting" Value="inProcess" ReadOnly="false" />
+                <Argument Key="FluidEarth2.Sdk.BaseComponentTimeWithEngine.TimeHorizon" Value="Closed^56200^56300" ReadOnly="false" />
+                <Argument Key="KState.SimpleComponent.SimpleComponent.Arg.TimeDelta" Value="1" ReadOnly="false" />
+              </Arguments>
+              <Platforms>
+                <Platform>Win</Platform>
+                <Platform>Win32</Platform>
+                <Platform>Win64</Platform>
+                <Platform>Unix</Platform>
+                <Platform>Unix32</Platform>
+                <Platform>Unix64</Platform>
+                <Platform>Linux</Platform>
+                <Platform>Linux32</Platform>
+                <Platform>Linux64</Platform>
+                <Platform>Mac</Platform>
+                <Platform>Mac32</Platform>
+                <Platform>Mac64</Platform>
+              </Platforms>
+            </LinkableComponent>
+          </ProxyLinkableComponent>
+        </Constructor>
+        <Connectivity />
+      </IdentifiableItem>
+      <IdentifiableItem caption="X" instanceId="KState.SimpleComponent.SimpleComponent.Output.X" interface="IBaseOutput" id="debff60f-a6ab-4a93-bcbf-1c33982e495d" captionEdited="False" descriptionEdited="False">
+        <Platforms>Win32|Win64|Win|Unix32|Unix64|Unix|Linux32|Linux64|Linux|Mac32|Mac64|Mac|All</Platforms>
+        <Constructor>
+          <ProxyExchangeItem isInput="False" idComponentItem="a05bf6ad-222e-4bd8-9b9c-68d29b0239c5" idExchangeItem="KState.SimpleComponent.SimpleComponent.Output.X" />
+        </Constructor>
+        <Connectivity />
+      </IdentifiableItem>
+      <IdentifiableItem caption="A" instanceId="KState.SimpleComponent.SimpleComponent.Input.A" interface="IBaseInput" id="0d8c2a62-4154-4c60-8964-a6edddc78aed" captionEdited="False" descriptionEdited="False">
+        <Platforms>Win32|Win64|Win|Unix32|Unix64|Unix|Linux32|Linux64|Linux|Mac32|Mac64|Mac|All</Platforms>
+        <Constructor>
+          <ProxyExchangeItem isInput="True" idComponentItem="6c5396a5-4002-40c4-b35c-6e28a0dab288" idExchangeItem="KState.SimpleComponent.SimpleComponent.Input.A" />
+        </Constructor>
+        <Connectivity>
+          <Provider id="debff60f-a6ab-4a93-bcbf-1c33982e495d" />
+        </Connectivity>
+      </IdentifiableItem>
+      <IdentifiableItem caption="Y" instanceId="KState.SimpleComponent.SimpleComponent.Output.Y" interface="IBaseOutput" id="0f066e0f-dce1-499e-817b-f59b02d0e6e4" captionEdited="False" descriptionEdited="False">
+        <Platforms>Win32|Win64|Win|Unix32|Unix64|Unix|Linux32|Linux64|Linux|Mac32|Mac64|Mac|All</Platforms>
+        <Constructor>
+          <ProxyExchangeItem isInput="False" idComponentItem="8f9252c0-6528-4d02-bc38-ce9b6ca82ebb" idExchangeItem="KState.SimpleComponent.SimpleComponent.Output.Y" />
+        </Constructor>
+        <Connectivity />
+      </IdentifiableItem>
+      <IdentifiableItem caption="B" instanceId="KState.SimpleComponent.SimpleComponent.Input.B" interface="IBaseInput" id="1d239a8c-a826-4ba3-ba7e-efbbe5fbb50c" captionEdited="False" descriptionEdited="False">
+        <Platforms>Win32|Win64|Win|Unix32|Unix64|Unix|Linux32|Linux64|Linux|Mac32|Mac64|Mac|All</Platforms>
+        <Constructor>
+          <ProxyExchangeItem isInput="True" idComponentItem="6c5396a5-4002-40c4-b35c-6e28a0dab288" idExchangeItem="KState.SimpleComponent.SimpleComponent.Input.B" />
+        </Constructor>
+        <Connectivity>
+          <Provider id="0f066e0f-dce1-499e-817b-f59b02d0e6e4" />
+        </Connectivity>
+      </IdentifiableItem>
+      <IdentifiableItem caption="Z" instanceId="KState.SimpleComponent.SimpleComponent.Output.Z" interface="IBaseOutput" id="ab531527-568a-4b42-8814-d17ea730e830" captionEdited="False" descriptionEdited="False">
+        <Platforms>Win32|Win64|Win|Unix32|Unix64|Unix|Linux32|Linux64|Linux|Mac32|Mac64|Mac|All</Platforms>
+        <Constructor>
+          <ProxyExchangeItem isInput="False" idComponentItem="a7d2e0f5-53e0-4b6a-be2a-0a9a8cfbe60f" idExchangeItem="KState.SimpleComponent.SimpleComponent.Output.Z" />
+        </Constructor>
+        <Connectivity />
+      </IdentifiableItem>
+      <IdentifiableItem caption="C" instanceId="KState.SimpleComponent.SimpleComponent.Input.C" interface="IBaseInput" id="506d57a8-e872-43c5-82e4-8d87c1665def" captionEdited="False" descriptionEdited="False">
+        <Platforms>Win32|Win64|Win|Unix32|Unix64|Unix|Linux32|Linux64|Linux|Mac32|Mac64|Mac|All</Platforms>
+        <Constructor>
+          <ProxyExchangeItem isInput="True" idComponentItem="6c5396a5-4002-40c4-b35c-6e28a0dab288" idExchangeItem="KState.SimpleComponent.SimpleComponent.Input.C" />
+        </Constructor>
+        <Connectivity>
+          <Provider id="ab531527-568a-4b42-8814-d17ea730e830" />
+        </Connectivity>
+      </IdentifiableItem>
+      <IdentifiableItem caption="X" instanceId="KState.SimpleComponent.SimpleComponent.Output.X" interface="IBaseOutput" id="3ce18adc-ebd1-486a-bc94-0163bbc0e040" captionEdited="False" descriptionEdited="False">
+        <Platforms>Win32|Win64|Win|Unix32|Unix64|Unix|Linux32|Linux64|Linux|Mac32|Mac64|Mac|All</Platforms>
+        <Constructor>
+          <ProxyExchangeItem isInput="False" idComponentItem="6c5396a5-4002-40c4-b35c-6e28a0dab288" idExchangeItem="KState.SimpleComponent.SimpleComponent.Output.X" />
+        </Constructor>
+        <Connectivity />
+      </IdentifiableItem>
+    </Items>
+    <RunOptions>
+      <ExternalType type="FluidEarth2.Pipistrelle.Console.RunOptions">
+        <Identity id="073d60f0-ee75-4e6f-b0e4-a5ca76fcfcb3">
+          <Describes caption="FluidEarth2.Pipistrelle.Console.RunOptions">FluidEarth2_Pipistrelle_Console, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Describes>
+        </Identity>
+        <AssemblyName>FluidEarth2_Pipistrelle_Console, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+        <CodeBase>
+          <Original>file:///C:/Users/Tom/Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle_Console.exe</Original>
+          <Relative>../../../../../../Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle_Console.exe</Relative>
+        </CodeBase>
+      </ExternalType>
+      <Persistence>
+        <RunOptions monitorTraceOutput="false" monitorComponentStatusChange="false" monitorExchangeItemChange="false" getValuesOnCompositionId="3ce18adc-ebd1-486a-bc94-0163bbc0e040">
+          <Identity id="8245b63b-59ac-477b-971f-da2fc543a184">
+            <Describes caption="Run Options"></Describes>
+          </Identity>
+          <GetValuesAt>
+            <Time start="56300" duration="0" />
+          </GetValuesAt>
+          <UriLog>null</UriLog>
+          <UriHtml>null</UriHtml>
+        </RunOptions>
+      </Persistence>
+    </RunOptions>
+    <PersistedUri>C:\Users\Tom\Documents\GitHub\parallel-sdk\OpenMI_2.0\Sample\Runtime\Composition.chi</PersistedUri>
+  </Composition>
+  <TabGroups>
+    <TabGroup caption="Composition View" singleInstanceOnly="true" userControlGuid="A42611E1-F756-40B8-8F12-B4FBF736FD7B">
+      <ExternalType type="FluidEarth2.Pipistrelle.CompositionViewTabPage">
+        <Identity id="0aa52df3-256f-499d-9730-2514b481494a">
+          <Describes caption="FluidEarth2.Pipistrelle.CompositionViewTabPage">FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Describes>
+        </Identity>
+        <AssemblyName>FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+        <CodeBase>
+          <Original>file:///C:/Users/Tom/Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Original>
+          <Relative>../../../../../../Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Relative>
+        </CodeBase>
+      </ExternalType>
+      <TabNewInstance>
+        <Tab>
+          <Describes caption="Composition" />
+          <CompositionView>
+            <Shapes />
+          </CompositionView>
+        </Tab>
+      </TabNewInstance>
+      <Tab>
+        <Describes caption="Composition"></Describes>
+        <CompositionView>
+          <Shapes>
+            <IShape>
+              <ExternalType type="FluidEarth2.Pipistrelle.CompositionView+Box">
+                <Identity id="394e3bdd-ae96-4343-9f8b-8b3351b98d95">
+                  <Describes caption="FluidEarth2.Pipistrelle.CompositionView+Box">FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Describes>
+                </Identity>
+                <AssemblyName>FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                <CodeBase>
+                  <Original>file:///C:/Users/Tom/Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Original>
+                  <Relative>../../../../../../Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Relative>
+                </CodeBase>
+              </ExternalType>
+              <Persistence>
+                <Box>
+                  <Shape uniqueId="6c5396a5-4002-40c4-b35c-6e28a0dab288" show="True" drawText="True" rectangle="197,48,140,80" />
+                </Box>
+              </Persistence>
+            </IShape>
+            <IShape>
+              <ExternalType type="FluidEarth2.Pipistrelle.CompositionView+Box">
+                <Identity id="d7dfb927-d78c-41f7-b8fb-782be5a78349">
+                  <Describes caption="FluidEarth2.Pipistrelle.CompositionView+Box">FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Describes>
+                </Identity>
+                <AssemblyName>FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                <CodeBase>
+                  <Original>file:///C:/Users/Tom/Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Original>
+                  <Relative>../../../../../../Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Relative>
+                </CodeBase>
+              </ExternalType>
+              <Persistence>
+                <Box>
+                  <Shape uniqueId="a05bf6ad-222e-4bd8-9b9c-68d29b0239c5" show="True" drawText="True" rectangle="40,177,140,80" />
+                </Box>
+              </Persistence>
+            </IShape>
+            <IShape>
+              <ExternalType type="FluidEarth2.Pipistrelle.CompositionView+Box">
+                <Identity id="5573c90e-9039-4e14-9fa9-3cfbc0ff64e9">
+                  <Describes caption="FluidEarth2.Pipistrelle.CompositionView+Box">FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Describes>
+                </Identity>
+                <AssemblyName>FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                <CodeBase>
+                  <Original>file:///C:/Users/Tom/Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Original>
+                  <Relative>../../../../../../Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Relative>
+                </CodeBase>
+              </ExternalType>
+              <Persistence>
+                <Box>
+                  <Shape uniqueId="8f9252c0-6528-4d02-bc38-ce9b6ca82ebb" show="True" drawText="True" rectangle="204,183,140,80" />
+                </Box>
+              </Persistence>
+            </IShape>
+            <IShape>
+              <ExternalType type="FluidEarth2.Pipistrelle.CompositionView+Box">
+                <Identity id="cbdd0cc3-db8f-4690-990b-cabc53823748">
+                  <Describes caption="FluidEarth2.Pipistrelle.CompositionView+Box">FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Describes>
+                </Identity>
+                <AssemblyName>FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                <CodeBase>
+                  <Original>file:///C:/Users/Tom/Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Original>
+                  <Relative>../../../../../../Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Relative>
+                </CodeBase>
+              </ExternalType>
+              <Persistence>
+                <Box>
+                  <Shape uniqueId="a7d2e0f5-53e0-4b6a-be2a-0a9a8cfbe60f" show="True" drawText="True" rectangle="376,177,140,80" />
+                </Box>
+              </Persistence>
+            </IShape>
+            <IShape>
+              <ExternalType type="FluidEarth2.Pipistrelle.CompositionView+EllipseTrigger">
+                <Identity id="319059f4-aca5-4f31-97b5-da569ee25170">
+                  <Describes caption="FluidEarth2.Pipistrelle.CompositionView+EllipseTrigger">FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Describes>
+                </Identity>
+                <AssemblyName>FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                <CodeBase>
+                  <Original>file:///C:/Users/Tom/Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Original>
+                  <Relative>../../../../../../Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Relative>
+                </CodeBase>
+              </ExternalType>
+              <Persistence>
+                <EllipseTrigger sourceShapeUniqueId="6c5396a5-4002-40c4-b35c-6e28a0dab288">
+                  <Ellipse>
+                    <Shape uniqueId="3ce18adc-ebd1-486a-bc94-0163bbc0e040" show="True" drawText="False" rectangle="372,88,20,20" />
+                  </Ellipse>
+                </EllipseTrigger>
+              </Persistence>
+            </IShape>
+            <IShape>
+              <ExternalType type="FluidEarth2.Pipistrelle.CompositionView+Arrow">
+                <Identity id="c9468235-8e0b-4174-b313-6d6059e81dde">
+                  <Describes caption="FluidEarth2.Pipistrelle.CompositionView+Arrow">FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Describes>
+                </Identity>
+                <AssemblyName>FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                <CodeBase>
+                  <Original>file:///C:/Users/Tom/Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Original>
+                  <Relative>../../../../../../Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Relative>
+                </CodeBase>
+              </ExternalType>
+              <Persistence>
+                <ArrowLink>
+                  <Link sourceCompositionId="a05bf6ad-222e-4bd8-9b9c-68d29b0239c5" targetCompositionId="6c5396a5-4002-40c4-b35c-6e28a0dab288" />
+                  <Shape uniqueId="d0bf7e28-d6bf-48c0-a897-3ce0d0c35b98" show="True" drawText="True" rectangle="180,128,63,75" />
+                </ArrowLink>
+              </Persistence>
+            </IShape>
+            <IShape>
+              <ExternalType type="FluidEarth2.Pipistrelle.CompositionView+Arrow">
+                <Identity id="9b5e2755-45fe-47ae-a0aa-02f63e42ae67">
+                  <Describes caption="FluidEarth2.Pipistrelle.CompositionView+Arrow">FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Describes>
+                </Identity>
+                <AssemblyName>FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                <CodeBase>
+                  <Original>file:///C:/Users/Tom/Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Original>
+                  <Relative>../../../../../../Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Relative>
+                </CodeBase>
+              </ExternalType>
+              <Persistence>
+                <ArrowLink>
+                  <Link sourceCompositionId="8f9252c0-6528-4d02-bc38-ce9b6ca82ebb" targetCompositionId="6c5396a5-4002-40c4-b35c-6e28a0dab288" />
+                  <Shape uniqueId="81ae8db7-1fa3-48ba-96a9-0acb608c900f" show="True" drawText="True" rectangle="243,128,7,55" />
+                </ArrowLink>
+              </Persistence>
+            </IShape>
+            <IShape>
+              <ExternalType type="FluidEarth2.Pipistrelle.CompositionView+Arrow">
+                <Identity id="232a7e06-da17-4397-9866-93f5d1b7a061">
+                  <Describes caption="FluidEarth2.Pipistrelle.CompositionView+Arrow">FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Describes>
+                </Identity>
+                <AssemblyName>FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                <CodeBase>
+                  <Original>file:///C:/Users/Tom/Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Original>
+                  <Relative>../../../../../../Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Relative>
+                </CodeBase>
+              </ExternalType>
+              <Persistence>
+                <ArrowLink>
+                  <Link sourceCompositionId="a7d2e0f5-53e0-4b6a-be2a-0a9a8cfbe60f" targetCompositionId="6c5396a5-4002-40c4-b35c-6e28a0dab288" />
+                  <Shape uniqueId="335044e2-7be6-4eb0-a6f6-6b4a6ed0bca0" show="True" drawText="True" rectangle="337,101,39,102" />
+                </ArrowLink>
+              </Persistence>
+            </IShape>
+            <IShape>
+              <ExternalType type="FluidEarth2.Pipistrelle.CompositionView+Arrow">
+                <Identity id="d98579e9-e773-4cd6-91de-b0faebe7a9f3">
+                  <Describes caption="FluidEarth2.Pipistrelle.CompositionView+Arrow">FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Describes>
+                </Identity>
+                <AssemblyName>FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+                <CodeBase>
+                  <Original>file:///C:/Users/Tom/Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Original>
+                  <Relative>../../../../../../Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Relative>
+                </CodeBase>
+              </ExternalType>
+              <Persistence>
+                <ArrowLink>
+                  <Link sourceCompositionId="6c5396a5-4002-40c4-b35c-6e28a0dab288" targetCompositionId="3ce18adc-ebd1-486a-bc94-0163bbc0e040" />
+                  <Shape uniqueId="882f8dfa-384e-4f64-9aa1-c092521951a1" show="True" drawText="True" rectangle="337,101,36,0" />
+                </ArrowLink>
+              </Persistence>
+            </IShape>
+          </Shapes>
+        </CompositionView>
+      </Tab>
+    </TabGroup>
+    <TabGroup caption="Pull Run View" singleInstanceOnly="true" userControlGuid="1EA13EC3-A951-4D74-A03B-17558F3240B7">
+      <ExternalType type="FluidEarth2.Pipistrelle.RunTabPage">
+        <Identity id="eb7e8404-c2ae-4228-a1a8-b07012164bda">
+          <Describes caption="FluidEarth2.Pipistrelle.RunTabPage">FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Describes>
+        </Identity>
+        <AssemblyName>FluidEarth2_Pipistrelle, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+        <CodeBase>
+          <Original>file:///C:/Users/Tom/Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Original>
+          <Relative>../../../../../../Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle.exe</Relative>
+        </CodeBase>
+      </ExternalType>
+      <TabNewInstance>
+        <Tab>
+          <Describes caption="Run" />
+          <Run caption="Run" />
+        </Tab>
+      </TabNewInstance>
+      <Tab>
+        <Describes caption="Run Composition"></Describes>
+        <Run />
+      </Tab>
+    </TabGroup>
+    <TabGroup caption="Component View" singleInstanceOnly="false" userControlGuid="41AE8E30-6E91-4E46-9698-500CB7980B94">
+      <ExternalType type="FluidEarth2.Pipistrelle.UiBase.ComponentViewTabPage">
+        <Identity id="a7787dd5-a8fc-49c4-bc15-032f71409967">
+          <Describes caption="FluidEarth2.Pipistrelle.UiBase.ComponentViewTabPage">FluidEarth2_Pipistrelle_UiBase, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Describes>
+        </Identity>
+        <AssemblyName>FluidEarth2_Pipistrelle_UiBase, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+        <CodeBase>
+          <Original>file:///C:/Users/Tom/Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle_UiBase.DLL</Original>
+          <Relative>../../../../../../Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle_UiBase.DLL</Relative>
+        </CodeBase>
+      </ExternalType>
+      <TabNewInstance>
+        <Tab>
+          <Describes caption="Component" />
+          <Component UniqueId="" />
+        </Tab>
+      </TabNewInstance>
+    </TabGroup>
+  </TabGroups>
+  <ArgumentEditors>
+    <ExternalType type="FluidEarth2.Pipistrelle.ArgumentTypes.OnEdit">
+      <Identity id="522435a8-0345-48fd-b9ce-cf5f044d47d0">
+        <Describes caption="FluidEarth2.Pipistrelle.ArgumentTypes.OnEdit">FluidEarth2_Pipistrelle_ArgumentTypes, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</Describes>
+      </Identity>
+      <AssemblyName>FluidEarth2_Pipistrelle_ArgumentTypes, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null</AssemblyName>
+      <CodeBase>
+        <Original>file:///C:/Users/Tom/Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle_ArgumentTypes.DLL</Original>
+        <Relative>../../../../../../Desktop/Standard2/FluidEarth2_Pipistrelle/bin/x86/Debug/FluidEarth2_Pipistrelle_ArgumentTypes.DLL</Relative>
+      </CodeBase>
+    </ExternalType>
+  </ArgumentEditors>
+  <SavedAsUri>file:///C:/Users/Tom/Documents/GitHub/parallel-sdk/OpenMI_2.0/Sample/Runtime/Composition.chi</SavedAsUri>
+</Pipistrelle>
