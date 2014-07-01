@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinkableComponent xmlns="http://www.openmi.org/v2_0" 
+									 Type="KState.SimpleComponent.SimpleComponent" 
+									 Assembly="Assemblies\SimpleComponent.dll">
+	<Arguments>
+		<Argument Key="FluidEarth2.Sdk.BaseComponentWithEngine.Caption" Value="Component00" />
+		<Argument Key="FluidEarth2.Sdk.BaseComponentWithEngine.TraceStatus" Value="false" />
+		<Argument Key="FluidEarth2.Sdk.BaseComponentWithEngine.TraceConvertors" Value="false" />
+		<Argument Key="FluidEarth2.Sdk.BaseComponentWithEngine.Remoting" Value="inProcess" />   
+		<Argument Key="FluidEarth2.Sdk.BaseComponentTimeWithEngine.TimeHorizon" Value="Closed^56200^56300" />
+		<Argument Key="KState.SimpleComponent.SimpleComponent.Arg.TimeDelta" Value="1" />
+	</Arguments>
+	<Platforms>
+		<Platform>Win</Platform>
+		<Platform>Linux</Platform>
+		<Platform>Unix</Platform>
+		<Platform>Mac</Platform>
+	</Platforms>
+</LinkableComponent>
